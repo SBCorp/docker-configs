@@ -5,7 +5,7 @@
 #		
 ##############################################################################
 # Take the config
-function test_params {
+test_params () {
 	# Pull the image and test the var
 	if [ -z "$IMAGE_VERSION" ]]
 	then
