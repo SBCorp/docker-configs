@@ -8,7 +8,7 @@
 
         "hello_world":
         {
-            "message": "Dockerized instance of Hello-world"
+            "message": "Dockerized instance of Hello-world Application"
         }
     }
 }
