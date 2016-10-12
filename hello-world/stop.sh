@@ -6,7 +6,6 @@
 ##############################################################################
 # Take the config
 . ./sub-scripts/check-params.sh
-. ./conf/control-scripts/docker-config
 
 #Check params
 test_params
