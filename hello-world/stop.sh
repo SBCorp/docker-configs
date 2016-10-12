@@ -13,3 +13,4 @@ test_params
 # Pull the image
 echo "Stopping the container hello-world-demo"
 echo $DOCKER_PASSWORD| sudo -S docker -H $DOCKER_ADDRESS stop hello-world-demo
+echo $DOCKER_PASSWORD| sudo -S docker -H $DOCKER_ADDRESS rm hello-world-demo
