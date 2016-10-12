@@ -18,4 +18,4 @@ echo "Pulling the image named $REGISTRY_ADDRESS/$IMAGE_NAME:$IMAGE_VERSION from 
 echo $DOCKER_PASSWORD| sudo -S docker -H $DOCKER_ADDRESS pull $REGISTRY_ADDRESS/$IMAGE_NAME:$IMAGE_VERSION
 
 echo "Starting image $REGISTRY_ADDRESS/$IMAGE_NAME on Docker engine $DOCKER_ADDRESS"
-echo $DOCKER_PASSWORD| sudo -S docker -H $DOCKER_ADDRESS run -d --rm --name hello-world-demo --hostname hello-world-demo -p 18080:8080 -v "`pwd`/conf/images/:/hello-world/conf" $REGISTRY_ADDRESS/$IMAGE_NAME:$IMAGE_VERSION
+echo $DOCKER_PASSWORD| sudo -S docker -H $DOCKER_ADDRESS run -d --name hello-world-demo --hostname hello-world-demo -p 18080:8080 -v "`pwd`/conf/images/:/hello-world/conf" $REGISTRY_ADDRESS/$IMAGE_NAME:$IMAGE_VERSION
