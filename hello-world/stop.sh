@@ -5,8 +5,8 @@
 #		Requires a local docker engine
 ##############################################################################
 # Take the config
-source ./sub-scripts/check-params.sh
-source ./conf/control-scripts/docker-config
+. ./sub-scripts/check-params.sh
+. ./conf/control-scripts/docker-config
 
 #Check params
 test_params
