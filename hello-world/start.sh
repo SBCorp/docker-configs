@@ -12,7 +12,7 @@ test_params
 
 # Pull the image
 echo "Logging docker engine $DOCKER_ADDRESS in to $REGISTRY_ADDRESS"
-docker login -u=\"$REGISTRY_LOGIN\" -p=\"$REGISTRY_PASSWORD\" https://$REGISTRY_ADDRESS
+echo $DOCKER_PASSWORD| sudo -S docker login -u=\"$REGISTRY_LOGIN\" -p=\"$REGISTRY_PASSWORD\" https://$REGISTRY_ADDRESS
 
 echo "Pulling the image named $REGISTRY_ADDRESS/$IMAGE_NAME from docker engine $DOCKER_ADDRESS "
 docker -H $DOCKER_ADDRESS pull $REGISTRY_ADDRESS/$IMAGE_NAME

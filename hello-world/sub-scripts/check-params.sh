@@ -32,4 +32,9 @@ test_params () {
 		echo "REGISTRY_PASSWORD is not set in ./conf/control-scripts/docker-config" 
 		exit 1
 	fi
+	if [ -z "$DOCKER_PASSWORD" ]]
+	then
+		echo "DOCKER_PASSWORD is not set in ./conf/control-scripts/docker-config" 
+		exit 1
+	fi
 }
